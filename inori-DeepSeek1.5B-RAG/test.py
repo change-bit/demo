@@ -82,7 +82,7 @@ Settings.llm = CustomDeepSeekLLM()
 # 配置Embedding+文档分片
 Settings.embed_model = DashScopeEmbedding(
     model_name="text-embedding-v1",
-    api_key="sk-2231d947be55426fb8ebb3057c2b7072"
+    api_key=""
 )
 # 中文文档最优分片配置，无冗余
 Settings.transformations = [SentenceSplitter(chunk_size=300, chunk_overlap=50)]
@@ -168,5 +168,6 @@ while True:
     # 生成回答
     prompt = build_prompt(question, retrieved_text)
     answer = generate_answer(prompt)
+
 
     print(f"AI: {answer}\n")
