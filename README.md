@@ -39,3 +39,4 @@
 ### 环境依赖
 ```bash
 pip install qdrant-client llama-index-core llama-index-vector-stores-qdrant llama-index-embeddings-dashscope transformers torch
+###模型数据请联系作者或采用自己的本地模型
